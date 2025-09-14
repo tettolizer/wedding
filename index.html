@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thiwanka & Nuwanthika Wedding</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Great+Vibes&family=Inter:wght@400;500&family=Lora:ital,wght@1,400;1,700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://png.pngtree.com/background/20221017/original/pngtree-green-floral-background-with-leaves-picture-image_1920970.jpg');
+            background-repeat: repeat;
+            background-size: 1000px;
+            background-color: #f9fafb;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Vignette overlay for subtle depth */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            pointer-events: none;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.05) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+            color: #14532d; /* dark green */
+            letter-spacing: 0.05em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .sub-heading {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            color: #166534; /* green */
+        }
+
+        /* Script font for couple names */
+        .couple-names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            color: #15803d;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Decorative flourish SVG */
+        .flourish {
+            width: 120px;
+            margin: 0 auto 1rem;
+            fill: #a3e635; /* lime green */
+            opacity: 0.6;
+        }
+
+        /* Gold border and shadow for invitation box */
+        .invitation-box {
+            background: white;
+            padding: 2.5rem 2rem; /* Reduced padding */
+            border-radius: 1.5rem; /* Slightly less rounded corners */
+            border: 2px solid #d4d8c0; /* A thinner, more subtle border */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Lighter shadow */
+            text-align: center;
+        }
+
+        hr.decorative {
+            border: none;
+            height: 2px;
+            width: 80px;
+            margin: 2rem auto;
+            background: linear-gradient(90deg, #d4af37 0%, #fef3c7 50%, #d4af37 100%);
+            border-radius: 1px;
+        }
+
+        /* Add to Calendar button with gradient and shadow */
+        .addToCalendar {
+            background: linear-gradient(135deg, #84cc16, #22c55e);
+            border-radius: 28px;
+            border: 1px solid #65a30d;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 16px 36px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #166534;
+            box-shadow: 0 4px 8px rgba(34, 197, 94, 0.4);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .addToCalendar:hover {
+            background: linear-gradient(135deg, #a3e635, #4ade80);
+            box-shadow: 0 6px 12px rgba(74, 222, 128, 0.6);
+        }
+
+        .addToCalendar:active {
+            position: relative;
+            top: 1px;
+            box-shadow: 0 2px 6px rgba(34, 197, 94, 0.3);
+        }
+
+        /* Location button styling */
+        .location-btn {
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 9999px;
+            box-shadow: 0 2px 6px rgba(21, 128, 61, 0.3);
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+
+        .location-btn:hover {
+            background-color: #bbf7d0;
+        }
+
+        /* RSVP styling */
+        .rsvp {
+            margin-top: 3rem;
+            font-family: 'Lora', serif;
+            color: #4b5563;
+        }
+
+        .rsvp p {
+            margin: 0.25rem 0;
+        }
+
+        .rsvp a {
+            color: #15803d;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .couple-names {
+                font-size: 4.5rem;
+            }
+            .invitation-box {
+                padding: 4rem 5rem 5rem;
+            }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 md:p-8">
+
+    <div class="invitation-box container">
+        <!-- Decorative flourish above heading -->
+        <svg class="flourish" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <path d="M10 10 Q 30 0 50 10 T 90 10 T 110 10" stroke="#a3e635" stroke-width="2" fill="none" />
+        </svg>
+
+        <!-- Main Invitation Heading -->
+        <h1 class="heading text-5xl md:text-6xl mb-1"><span class="text-green-600">You're Invited to Our Happily Ever After</span></h1>
+        <br>
+        <br>
+        
+        <!-- Parents and invitation text -->
+        <p class="text-base md:text-lg sub-heading mb-4">
+            
+            Daughter of Mr. Mahinda Herath & Mrs. Seetha Samarakoon<br />
+            & Son of Mr. Nanda Alahakoon & Mrs. Champa Peraketiya
+        </p>
+
+        <p class="text-base md:text-lg sub-heading mb-8">
+            Joyfully invite you to celebrate the marriage of their children<br />
+    
+        </p>
+        <!-- Couple Names with script font -->
+        <p class="couple-names mb-6">Nuwanthika & Thiwanka</p>
+
+        <hr class="decorative" />
+
+        <!-- Ceremony details -->
+        <div class="text-lg md:text-xl font-medium text-green-800 mb-6">
+            <p>Please join us for the Poruwa Ceremony</p>
+            <p class="heading text-2xl md:text-3xl my-2">on Thursday, 27th November 2025</p>
+            <p class="heading text-2xl md:text-3xl my-2">at 9:40 AM</p>
+            <p>at the Royal Classic Resort, Kandy</p>
+        </div>
+
+        <p class="text-sm md:text-base text-gray-500 italic mb-6">Your presence would be a cherished part of our special day..</p>
+
+        <!-- Buttons -->
+        <a href="https://maps.app.goo.gl/KBpe8YN9P8WBbrBF9" target="_blank" class="location-btn" aria-label="View Location on Map">
+            View Location on Map
+        </a>
+
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251127T033000Z%2F20251127T103000Z&details=Poruwa%20Ceremony%20at%209.40%20am&location=https%3A%2F%2Fmaps.app.goo.gl%2FKBpe8YN9P8WBbrBF9&text=Nuwanthika%20and%20Thiwanka%20Wedding%20" target="_blank" class="location-btn" aria-label="Add to Calendar">
+            Add to Calendar
+        </a>
+
+        <hr class="decorative" />
+
+        <!-- RSVP Section -->
+        <div class="rsvp">
+            <p class="text-sm md:text-base italic mb-2">We would be grateful for your response by 27th October 2025.</p>
+            <p class="font-bold text-green-800 mb-1">RSVP</p>
+            <p>Thiwanka (Groom): <a href="tel:0764603427">076 460 3427</a></p>
+            <p>Nuwanthika (Bride): <a href="tel:0757204322">075 720 4322</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
